@@ -1,0 +1,151 @@
+.container {
+  padding: 20px;
+}
+
+.order-product-container {
+  display: grid;
+  width:1050px;
+  height: 1500px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.order-product-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.order-product-card:hover {
+  transform: translateY(-5px);
+}
+
+.order-product-image {
+  width: 50px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.order-product-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.order-cross {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color:black;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.star {
+  color: gold;
+}
+
+.order-product-price, .order-product-reviews {
+  margin: 5px 0;
+}
+
+.order-ship-button, .order-deliver-button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.order-ship-button {
+  background-color: green;
+  color: white;
+}
+
+.order-deliver-button {
+  background-color: orange;
+  color: white;
+}
+
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.order-modal {
+  width: 800px;
+  height: auto;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.modal-left {
+  width: 50%;
+  padding: 20px;
+}
+
+.modal-product-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.modal-stars {
+  color: gold;
+  margin-top: 10px;
+}
+
+.modal-order-details {
+  margin-top: 20px;
+}
+
+.modal-right {
+  width: 50%;
+  padding: 20px;
+}
+
+.price-details {
+  margin-top: 20px;
+}
+
+.modal-purchase-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-purchase-button:hover {
+  background-color: #0056b3;
+}

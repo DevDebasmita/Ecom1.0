@@ -1,0 +1,74 @@
+
+.whistle-product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .whistle-product-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    width: calc(50% - 20px); /* Two items per row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .whistle-product-image {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+  }
+  
+  .whistle-product-info {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .whistle-product-name {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  .whistle-product-description,
+  .whistle-product-reviews,
+  .whistle-product-price {
+    margin: 5px 0;
+  }
+  
+  .whistle-add-to-cart {
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .whistle-add-to-cart:hover {
+    background-color: #0056b3;
+  }
+  .whistle-cross {
+    position: relative;
+    
+    left: 280%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+    
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

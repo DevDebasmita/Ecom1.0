@@ -1,0 +1,335 @@
+.header {
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  height: 3%;
+  width: 30px;
+}
+
+.companyName {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.delivery {
+  font-size: 10px;
+  margin-left: 20px;
+}
+
+.locationIcon {
+  margin-right: 5px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.iconContainer {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1.3em;
+}
+
+.cartIcon {
+  position: relative;
+  cursor: pointer;
+}
+
+.cartCount {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 0.8em;
+}
+
+.profileDropdown, .cartDropdown {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 600px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.profileContent, .cartContent {
+  padding: 20px;
+}
+
+.profileLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+.profileContent {
+  
+  align-items: center;
+}
+
+.profileLeft {
+  margin-right: 10px;
+}
+
+.profileRight {
+  flex: 1;
+}
+
+.profilePic {
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  object-fit: cover;
+  cursor: pointer;
+
+}
+
+.profilePic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.fileInput {
+  display: none;
+  width: 20px;
+}
+
+.profileRight {
+  flex: 2;
+  padding-right: 20px;
+}
+
+.input {
+  width: 50%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.saveButton {
+  width: 60%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.saveButton:hover {
+  background-color: #0056b3;
+}
+
+.profileDetails {
+  margin-top: 20px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.gridItem {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.orderCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.smallProductImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.productDetails {
+  flex: 1;
+}
+
+.productDetails h3 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.productDetails p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.stars {
+  font-size: 0.9em;
+  color: gold;
+}
+
+.productPrice {
+  text-align: right;
+}
+
+.productPrice strong {
+  display: block;
+  font-size: 1em;
+}
+
+.shipped {
+  color: green;
+  font-size: 0.9em;
+}
+
+.deliveryAddress {
+  margin-top: 10px;
+}
+
+.trackOrder {
+  margin-top: 20px;
+}
+
+.trackOrder h4 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.trackStep {
+  display: flex;
+  align-items: center;
+}
+
+.checkmark {
+  color: green;
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.trackLine {
+  width: 2px;
+  height: 20px;
+  background-color: #ccc;
+  margin: 0 18px;
+}
+
+.orderSummary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.orderTotal, .orderDetails {
+  width: 45%;
+}
+
+.orderTotal h4, .orderDetails h4 {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.orderTotal p, .orderDetails p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 370px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+  text-align: center;
+}
+
+.popupContent {
+  padding: 20px;
+}
+
+.saveButton {
+  width: 60%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.saveButton:hover {
+  background-color: #0056b3;
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 270px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+  text-align: center;
+}
+
+.popupIcon {
+  font-size: 2em;
+  color: green;
+  margin-bottom: 10px;
+}
+
+

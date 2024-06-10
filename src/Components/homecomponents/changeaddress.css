@@ -1,0 +1,145 @@
+
+
+.main-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+h2 {
+    text-align: left;
+    width: 100%;
+}
+
+.image-and-form {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-section {
+    position: relative;
+    width: 300px;
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+}
+
+.choose-map-btn {
+    width:137px;
+    color:aliceblue;
+    background-color: #000;
+    position: absolute;
+    top: 10px;
+    left: 70%;
+    transform: translateX(-50%);
+}
+
+.address-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.add-btn {
+    width: 222px;
+    height: 25px;
+    align-self: flex-end;
+    color: aliceblue;
+    background-color: #000;
+    float:right;
+}
+
+.choose-address {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.address-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.address-option {
+    flex: 1 1 calc(25% - 10px);
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+    .column {
+        
+        margin-top: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+
+.address-options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    margin-right: 20px; /* Adjust margin between columns */
+}
+
+.circle {
+    width: 100%; /* Make each circle take up the full width of the column */
+    height: auto; /* Auto adjust height */
+    border-radius: 50%; /* Make circles round */
+    border: 2px solid #333; /* Change border color as needed */
+    margin-bottom: 20px; /* Adjust margin between circles */
+    padding: 20px; /* Add padding inside circle */
+    box-sizing: border-box; /* Include padding in circle dimensions */
+}
+
+.circle input[type="radio"] {
+    display: none; /* Hide radio button */
+}
+
+.circle .content-outside-circle {
+    display: block; /* Display content outside circle */
+}
+
+.circle strong {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px; /* Add margin between strong and paragraph */
+}
+
+.circle p {
+    margin: 0; 
+}
+.input-group {
+    display: flex;
+    margin-bottom: 10px; /* Adjust margin between input groups */
+}
+
+.input-group input[type="text"] {
+    flex: 1;
+    margin-right: 10px; 
+}
+
+
+
+
+    
+
+

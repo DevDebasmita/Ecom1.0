@@ -1,0 +1,96 @@
+.features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    width: 74px;
+    height: 20px;
+    margin-bottom: 20px; /* Space between feature and New Arrival */
+  }
+  
+  .feature-icon {
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to right, black 50%, white 50%);
+    margin-left: 10px;
+  }
+  
+  .feature-item p {
+    margin: 0;
+  }
+  
+  .new-arrival {
+    width: 223px;
+    height: 48px;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .photo-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .photo-group.side-photos {
+    width: 469px;
+height: 367px;
+top: 57px;
+left: 50px;
+gap: 0px;
+opacity: 0px;
+
+  }
+  
+  .photo-group.middle-photos {
+    width: 570px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  
+  .photo {
+    position: relative;
+    transform: y 180px;;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .photo-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+  }
+  
+  .photo-text h4 {
+    font-weight: bold;
+  }
+  
+  .photo-text p {
+    margin: 0;
+  }
+  
+  .shop-now {
+    text-decoration: underline;
+  }
+  
+  .top-photo {
+    border-radius: 4px 4px 0px 0px;
+  }
+  
+  .bottom-photo {
+    border-radius: 0px 0px 4px 4px;
+  }
+  

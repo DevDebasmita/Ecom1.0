@@ -1,0 +1,143 @@
+/* src/Components/mobile.css */
+.main {
+    height: auto;
+    width: auto;
+    border: 1px solid rgb(146, 144, 144);
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .iphone {
+    height: 400px;
+    width: 320px;
+  }
+  
+  .sticker {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    background-color:#D6763C;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    font: Poppins;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28.5px;
+    height: 22px;
+    text-align: center;
+  }
+  
+  .short-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .short-images img {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+  }
+  
+  .product-details h1 {
+    margin-top: 0;
+  }
+  
+  .star {
+    font-size: 24px;
+    color: gold;
+    margin-top: 0;
+  }
+  
+  .details-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .description {
+    width: 60%;
+    margin: 0;
+  }
+  
+  .reviews {
+    width: 35%;
+    margin: 0;
+    text-align:left;
+  }
+  
+  .add-to-cart {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #0056b3;
+  }
+  
+  .short-heading {
+    color: black;
+    margin-top: 20px;
+  }
+  
+  .color-circles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+  }
+  
+  .red {
+    background-color:powderblue;
+  }
+  
+  .green {
+    background-color: burlywood;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .relevant-heading {
+    color: #007bff;
+  }
+  

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --body-font: "Mulish", sans-serif;
+    --heading-font: "Caveat", cursive;
+  
+    --Base_Font_Size: 100%;
+    font-size: var(--Base_Font_Size);
+  
+    --c1: #ED1F24;
+    --c2: #fff;
+  }
+  
+  @media screen and (max-width: 1930px) {
+    :root {
+      --Base_Font_Size: 100%;
+      font-size: var(--Base_Font_Size);
+    }
+  }
+  
+  @media screen and (max-width: 1728px) {
+    :root {
+      --Base_Font_Size: 85%;
+    }}

@@ -1,0 +1,76 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+}
+
+nav {
+  display: flex;
+}
+
+.menuIcon {
+  font-size: 14px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.navItem {
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.searchIcon {
+  margin-right: 5px;
+  color: white;
+}
+
+.searchInput {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 976px) {
+  .menuIcon {
+    display: block;
+  }
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: -265px;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    height: 100vh;
+    width: 265px;
+    z-index: 10;
+    transition: margin-left 0.5s;
+    overflow: hidden;
+    padding: 1rem;
+  }
+  .showMenu {
+    margin-left: 0;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+}
