@@ -14,6 +14,7 @@ const orders = [
   { image: '../m3.png', name: 'Product 5', description: 'Durable mobile phone', reviews: '(4.1k)', price: '$95.50' },
   { image: '../m3.png', name: 'Product 6', description: 'Great mobile phone', reviews: '(4.1k)', price: '$95.50' },
   { image: '../m3.png', name: 'Product 7', description: 'Awesome mobile phone', reviews: '(4.1k)', price: '$95.50' },
+  { image: '../m3.png', name: 'Product 8', description: 'Stylish mobile phone', reviews: '(4.1k)', price: '$95.50' },
   { image: '../m3.png', name: 'Product 8', description: 'Stylish mobile phone', reviews: '(4.1k)', price: '$95.50' }
 ];
 
