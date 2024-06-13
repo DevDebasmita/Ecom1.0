@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import styles from '../css/Login.module.css';
+import axios from '../Components/hooks/axios';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -13,7 +14,19 @@ const Login = () => {
             setError('Please enter both email and password.');
             return;
         }
-
+       
+    
+            axios
+                .post("/user/login", { email, password })
+                .then(({ data }) => {
+                    console.log(data)
+                })
+                .catch((e) => {
+                    console.log(e);
+                    
+                    
+                });
+    
         setError('');
         navigate('/Login/Home');
     };
