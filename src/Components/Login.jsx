@@ -16,16 +16,16 @@ const Login = () => {
 			return;
 		}
 
-        //work similar like this according to api endpoint added in postman
+		//work similar like this according to api endpoint added in postman
 		axios
 			.post("/user/login", { email, password })
 			.then(({ data }) => {
-				console.log(data);    //you can watch the response in console and work as needed 
-				toast.warn(data?.otp);  //this for for view like alert box 
-				navigate("/Login/Home");
+				console.log(data);
+				toast.warn(data?.otp); //this for for view like alert box
+				navigate("/Login/Home");    //navigate to otp
 			})
 			.catch((e) => {
-				console.log(e);
+				toast.error(e?.response?.data?.message || "Error Logon");
 			});
 
 		setError("");
