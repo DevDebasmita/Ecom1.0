@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
-import axios from "../Components/hooks/axios";
 import styles from "../css/Login.module.css";
 
 const Login = () => {
@@ -10,25 +8,20 @@ const Login = () => {
 	const [password, setPassword] = useState("");
 	const [error, setError] = useState("");
 
+	const generateOTP = () => {
+		return Math.floor(100000 + Math.random() * 900000).toString(); // Generates a 6-digit OTP
+	};
+
 	const handleLogin = () => {
 		if (!email || !password) {
 			setError("Please enter both email and password.");
 			return;
 		}
 
-		//work similar like this according to api endpoint added in postman
-		axios
-			.post("/user/login", { email, password })
-			.then(({ data }) => {
-				console.log(data);
-				toast.warn(data?.otp); //this for for view like alert box
-				navigate("/Login/Home");    //navigate to otp
-			})
-			.catch((e) => {
-				toast.error(e?.response?.data?.message || "Error Logon");
-			});
-
+		const otp = generateOTP();
+		alert(`Your OTP is: ${otp}`); // Displaying OTP using alert
 		setError("");
+		navigate("/Login/Home"); // Navigating to the home page
 	};
 
 	return (
