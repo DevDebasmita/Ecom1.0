@@ -15,12 +15,12 @@ const MyCart = () => {
     };
 
     const handlePay = () => {
-        // Handle payment process
+        
         setShowVerificationModal(true);
-        // Simulate payment verification
+        
         setTimeout(() => {
             setShowVerificationModal(false);
-            // Show payment success modal
+            
             setShowSuccessModal(true);
         }, 5000); 
     };

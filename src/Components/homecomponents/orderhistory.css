@@ -72,3 +72,47 @@
     align-items: center;
     justify-content: center;
   }
+  @media (max-width: 1024px) {
+    .whistle-product-card {
+      width: calc(50% - 20px); /* Two items per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .whistle-product-card {
+      width: calc(100% - 20px); /* One item per row */
+    }
+  
+    .whistle-product-info {
+      padding: 10px;
+    }
+  
+    .whistle-product-image {
+      width: 120px;
+      height: 160px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .whistle-product-card {
+      width: calc(100% - 20px); /* One item per row */
+    }
+  
+    .whistle-product-info {
+      padding: 10px;
+    }
+  
+    .whistle-product-image {
+      width: 100px;
+      height: 140px;
+    }
+  
+    .whistle-product-name {
+      font-size: 1em;
+    }
+  
+    .whistle-add-to-cart {
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+  }

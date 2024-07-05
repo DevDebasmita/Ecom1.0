@@ -1,8 +1,8 @@
-/* src/css/Banner.module.css */
+
 .bannerContainer {
     position: relative;
     width: 100%;
-    height: 410px; /* Adjust height as needed */
+    height: 410px; 
   }
   
   .bannerImage {
@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    background-color: rgba(0, 0, 0, 0.5); 
     color: white;
   }
   
@@ -34,26 +34,78 @@
   }
   
   .bannerSubtitle {
-    font-size: 8px; /* Adjust font size as needed */
+    font-size: 8px; 
     margin-bottom: 20px;
   }
   
   .shopNow {
-    font-size: 12px; /* Adjust font size as needed */
+    font-size: 12px; 
     text-decoration: underline;
   }
   
   .navigation {
     position: absolute;
-    bottom: 20px; /* Adjust vertical position as needed */
+    bottom: 20px; 
     left: 50%;
     transform: translateX(-50%);
   }
   
   .chevronLeft,
   .chevronRight {
-    font-size: 24px; /* Adjust font size as needed */
-    margin: 0 10px; /* Adjust spacing between icons as needed */
+    font-size: 24px; 
+    margin: 0 10px; 
     cursor: pointer;
   }
-  
+  @media (max-width: 768px) {
+    .bannerContainer {
+        height: 300px; 
+    }
+
+    .bannerImage {
+        height: 300px;
+    }
+
+    .bannerTitle {
+        font-size: 36px;
+    }
+
+    .bannerSubtitle {
+        font-size: 14px;
+    }
+
+    .shopNow {
+        font-size: 10px;
+    }
+
+    .chevronLeft,
+    .chevronRight {
+        font-size: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .bannerContainer {
+        height: 200px; 
+    }
+
+    .bannerImage {
+        height: 200px;
+    }
+
+    .bannerTitle {
+        font-size: 24px;
+    }
+
+    .bannerSubtitle {
+        font-size: 12px;
+    }
+
+    .shopNow {
+        font-size: 8px;
+    }
+
+    .chevronLeft,
+    .chevronRight {
+        font-size: 18px; 
+    }
+}

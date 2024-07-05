@@ -9,7 +9,7 @@ const Login = () => {
 	const [error, setError] = useState("");
 
 	const generateOTP = () => {
-		return Math.floor(100000 + Math.random() * 900000).toString(); // Generates a 6-digit OTP
+		return Math.floor(100000 + Math.random() * 900000).toString(); 
 	};
 
 	const handleLogin = () => {
@@ -19,9 +19,9 @@ const Login = () => {
 		}
 
 		const otp = generateOTP();
-		alert(`Your OTP is: ${otp}`); // Displaying OTP using alert
+		alert(`Your OTP is: ${otp}`); 
 		setError("");
-		navigate("/Login/Home"); // Navigating to the home page
+		navigate("/Login/Home"); 
 	};
 
 	return (

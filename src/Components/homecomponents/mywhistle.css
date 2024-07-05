@@ -72,4 +72,43 @@
     align-items: center;
     justify-content: center;
   }
+  @media (max-width: 768px) {
+    .whistle-product-card {
+        width: calc(100% - 20px); /* One item per row */
+    }
+
+    .whistle-cross {
+        left: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .whistle-product-container {
+        padding: 10px;
+    }
+
+    .whistle-product-card {
+        margin: 10px 0;
+    }
+
+    .whistle-product-image {
+        width: 100px;
+        height: 150px;
+    }
+
+    .whistle-product-info {
+        padding: 10px;
+    }
+
+    .whistle-product-name {
+        font-size: 1em;
+    }
+
+    .whistle-cross {
+        left: 90%;
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+    }
+}
   

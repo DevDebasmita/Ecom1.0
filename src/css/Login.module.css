@@ -120,12 +120,99 @@ body {
   text-decoration: underline;
 }
 
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container .img,
+  .login_area {
+    width: 100%;
+    height: 50%;
+  }
+
+  .login_box {
+    max-width: 90%;
+  }
+}
+
 @media (max-width: 768px) {
-  .img {
+  .container {
+    flex-direction: column;
+  }
+
+  .container .img,
+  .login_area {
+    width: 100%;
+    height: auto;
+  }
+
+  .login_box {
+    max-width: 95%;
+  }
+
+  .login_box h1 {
+    font-size: 24px;
+  }
+
+  .login_box h5 {
+    font-size: 14px;
+  }
+
+  .text_field input {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+
+  .footer h6 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container .img {
     display: none;
   }
 
   .login_area {
     width: 100%;
+    height: auto;
+  }
+
+  .login_box {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .login_box h1 {
+    font-size: 20px;
+  }
+
+  .login_box h5 {
+    font-size: 12px;
+  }
+
+  .text_field input {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer h6 {
+    font-size: 12px;
   }
 }

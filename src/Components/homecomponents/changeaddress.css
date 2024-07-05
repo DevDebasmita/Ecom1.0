@@ -136,7 +136,42 @@ h2 {
     flex: 1;
     margin-right: 10px; 
 }
+@media (max-width: 480px) {
+    .main-content {
+        margin: 10px;
+    }
 
+    .image-and-form {
+        gap: 10px;
+    }
+
+    .choose-map-btn {
+        width: 100px;
+    }
+
+    .add-btn {
+        width: 150px;
+        height: 30px;
+    }
+
+    .address-option {
+        padding: 5px;
+        min-width: 80px;
+    }
+
+    .circle {
+        padding: 10px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group input[type="text"] {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
 
 
 

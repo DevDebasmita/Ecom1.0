@@ -1,4 +1,4 @@
-/* viewmore.css */
+
 .view-more-container {
     display: flex;
     flex-direction: column;
@@ -93,4 +93,68 @@
 
 .product-card1 button:hover {
     background-color: #218838;
+}
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding-top: 0;
+    }
+
+    .product-row {
+        justify-content: center;
+    }
+
+    .product-card1 {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .product-card1 {
+        max-width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .product-card1 h3 {
+        font-size: 1em;
+    }
+
+    .product-card1 button {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
 }

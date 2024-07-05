@@ -333,3 +333,87 @@
 }
 
 
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logoImage {
+    height: 20px;
+    width: 20px;
+  }
+
+  .companyName, .delivery {
+    font-size: 8px;
+  }
+
+  .icon {
+    font-size: 1em;
+  }
+
+  .profileDropdown, .cartDropdown {
+    width: 100%;
+    right: 0;
+  }
+
+  .profileLeft {
+    flex-direction: row;
+  }
+
+  .profileRight {
+    padding-right: 0;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .saveButton {
+    width: 100%;
+  }
+
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .gridItem {
+    width: 100%;
+  }
+
+  .popup {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 5px;
+  }
+
+  .logoImage {
+    height: 15px;
+    width: 15px;
+  }
+
+  .companyName, .delivery {
+    font-size: 6px;
+  }
+
+  .icon {
+    font-size: 0.8em;
+  }
+
+  .profileLeft {
+    flex-direction: column;
+  }
+
+  .popup {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+}
