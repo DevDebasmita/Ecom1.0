@@ -1,74 +1,92 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "../css/Login.module.css";
+import axios from "./hooks/axios.jsx";
+// import { toast } from 'react-toastify';
 
 const Login = () => {
-	const navigate = useNavigate();
-	const [email, setEmail] = useState("");
-	const [password, setPassword] = useState("");
-	const [error, setError] = useState("");
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
-	const generateOTP = () => {
-		return Math.floor(100000 + Math.random() * 900000).toString(); 
-	};
+  const generateOTP = () => {
+    return Math.floor(100000 + Math.random() * 900000).toString();
+  };
 
-	const handleLogin = () => {
-		if (!email || !password) {
-			setError("Please enter both email and password.");
-			return;
-		}
+  const fetchData = async () => {
+    try {
+      const { data } = await axios.get("/user/login");
+      console.log(data);
+      // toast.warn(data?.otp);
+      navigate("/Login/Home");
+    } catch (e) {
+      console.log(e);
+      // toast.error(e?.response?.data?.message || "Error Login");
+    }
+  };
 
-		const otp = generateOTP();
-		alert(`Your OTP is: ${otp}`); 
-		setError("");
-		navigate("/Login/Home"); 
-	};
+  const handleLogin = () => {
+    if (!email || !password) {
+      setError("Please enter both email and password.");
+      return;
+    }
 
-	return (
-		<div className={styles.container}>
-			<div className={styles.img}>
-				<img src="../login1.jpg" alt="Loading..." />
-			</div>
-			<div className={styles.login_area}>
-				<div className={styles.login_box}>
-					<form onSubmit={(e) => e.preventDefault()}>
-						<h1>Log into Exclusive</h1>
-						<h5>Enter your details below</h5>
-						{error && <div className={styles.error}>{error}</div>}
-						<div className={styles.text_field}>
-							<input
-								type="text"
-								placeholder="Email or Phone Number"
-								value={email}
-								required
-								onChange={(e) => setEmail(e.target.value)}
-							/>
-						</div>
-						<div className={styles.text_field}>
-							<input
-								type="password"
-								placeholder="Password"
-								value={password}
-								required
-								onChange={(e) => setPassword(e.target.value)}
-							/>
-						</div>
-						<button type="button" className={styles.btn} onClick={handleLogin}>
-							Login
-						</button>
-						<div className={styles.footer}>
-							<Link to="/forget">
-								<h6>Forgot password?</h6>
-							</Link>
-							<Link to="/create">
-								<h6>Create an account</h6>
-							</Link>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	);
+    const otp = generateOTP();
+    alert(`Your OTP is: ${otp}`);
+    setError("");
+    navigate("/Login/Home");
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  return (
+    <div className={styles.container}>
+      <div className={styles.img}>
+        <img src="../login1.jpg" alt="Loading..." />
+      </div>
+      <div className={styles.login_area}>
+        <div className={styles.login_box}>
+          <form onSubmit={(e) => e.preventDefault()}>
+            <h1>Log into Exclusive</h1>
+            <h5>Enter your details below</h5>
+            {error && <div className={styles.error}>{error}</div>}
+            <div className={styles.text_field}>
+              <input
+                type="text"
+                placeholder="Email or Phone Number"
+                value={email}
+                required
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className={styles.text_field}>
+              <input
+                type="password"
+                placeholder="Password"
+                value={password}
+                required
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
+            <button type="button" className={styles.btn} onClick={handleLogin}>
+              Login
+            </button>
+            <div className={styles.footer}>
+              <Link to="/forget">
+                <h6>Forgot password?</h6>
+              </Link>
+              <Link to="/create">
+                <h6>Create an account</h6>
+              </Link>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Login;
