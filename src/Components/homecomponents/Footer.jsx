@@ -44,9 +44,9 @@ const Footer = () => {
         <h4>About Us</h4>
         <ul>
           <li><a href="/about">About Us</a></li>
-          <Link to={'/support'}><li><a href="/support">Support And Help</a></li></Link>
-          <Link to={'/policy'}><li><a href="/privacy">Privacy Policy</a></li></Link>
-          <Link to={'/terms'}><li><a href="/terms">Terms and Conditions</a></li></Link>
+          <li><a href="/support">Support And Help</a></li>
+          <li><a href="/policy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms and Conditions</a></li>
         </ul>
       </div>
       <div className="footer-right">

@@ -1,0 +1,152 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  
+  .leftPanel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+  }
+  
+  .logoBox {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 15px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .welcomeText {
+    font-size: 18px;
+    color: white;
+  }
+  
+  .rightPanel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+  }
+  
+  .verificationBox {
+    text-align: center;
+  }
+  
+  .verificationTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .verificationText {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .codeInput {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .inputBox {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .resendLink {
+    display: block;
+    margin-bottom: 20px;
+    color: #00b4db;
+    text-decoration: none;
+  }
+  
+  .verifyButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background: #00b4db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; /* Ensures the text inside the button is centered */
+  }
+  
+  .verifyButton:hover {
+    background: #0083b0;
+  }
+  
+  .verifyButton a {
+    color: white; /* Ensures the link color is white */
+    text-decoration: none; /* Removes the underline */
+  }
+  
+  .verifyButton a:hover {
+    color: white; /* Keeps the link color white on hover */
+    text-decoration: none; /* Ensures the underline does not appear on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .leftPanel, .rightPanel {
+      flex: none;
+      width: 100%;
+      height: 50%;
+    }
+  
+    .logo {
+      font-size: 20px;
+    }
+  
+    .welcomeText {
+      font-size: 16px;
+    }
+  
+    .verificationTitle {
+      font-size: 20px;
+    }
+  
+    .verificationText {
+      font-size: 12px;
+    }
+  
+    .inputBox {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+    }
+  
+    .verifyButton {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .codeInput {
+      flex-direction: column;
+    }
+  
+    .inputBox {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  

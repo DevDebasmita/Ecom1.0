@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './AllProduct.css';
 
+
 const products = [
   { image: '../w1.png', name: 'Product 1', description: 'Durable', reviews: '(4.1k)', price: '$95.50' },
   { image: '../w2.png', name: 'Product 2', description: 'Great', reviews: '(4.1k)', price: '$95.50' },
@@ -44,6 +45,7 @@ const Section = ({ title, products }) => (
     <div className="product-section">
       {products.map((product, index) => (
         <div className="product-card" key={`${title}-${index}`}>
+          <br/>
           <Link to={'/fashion'}>
             <img src={product.image} alt={product.name} />
           </Link>

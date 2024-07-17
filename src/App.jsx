@@ -3,6 +3,7 @@ import Forget from "./Components/Forget.jsx";
 import Home from "./Components/Home.jsx";
 import Login from "./Components/Login.jsx";
 import Verification from "./Components/Verification.jsx";
+import Verify from "./Components/homecomponents/Verify.jsx";
 
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
@@ -39,6 +40,7 @@ function App() {
 			<Router>
 				<Routes>
 					<Route path="/" element={<Login />}></Route>
+					<Route path="/verify" element={<Verify/>}></Route>
 					<Route path="/forget" element={<Forget />}></Route>
 					<Route path="/create" element={<CreateAccount />}></Route>
 					<Route path="/forget/Verify" element={<Verification />}></Route>

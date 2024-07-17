@@ -48,9 +48,7 @@ const BestDeal = () => {
           </div>
         </div>
       </div>
-      <div className="dots">
-        &bull; &bull; &bull;
-      </div>
+      
     </div>
   );
 };

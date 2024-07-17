@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "../css/Login.module.css";
 import axios from "./hooks/axios.jsx";
-// import { toast } from 'react-toastify';
+
 
 const Login = () => {
 	const navigate = useNavigate();
@@ -18,7 +18,7 @@ const Login = () => {
 		try {
 			const { data } = await axios.post("/user/login",{email,password});
 			console.log(data);
-			navigate("/Login/Home");
+			navigate("/verify");
 		} catch (e) {
 			console.log(e);
 		}

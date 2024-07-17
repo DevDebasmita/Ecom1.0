@@ -28,6 +28,7 @@ const Electronic = () => {
       <div className="product-section">
         {products.map((product, index) => (
           <div className="product-card" key={`mobile-${index}`}>
+            <br/>
             <Link to={'/image'}>
               <img src={product.image} alt={product.name} />
             </Link>
@@ -54,6 +55,7 @@ const Electronic = () => {
       <div className="product-section">
         {electronics.map((product, index) => (
           <div className="product-card" key={`electronic-${index}`}>
+            <br/>
             <img src={product.image} alt={product.name} />
             <div className="product-info">
               <div className="product-name">

@@ -170,6 +170,53 @@ body {
   padding: 8px 16px;
   color: green;
 }
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  flex-grow: 1; 
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Ensures the paragraph takes up the full width of its container */
+  margin: 0;
+}
+
+.product-info .headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-info h3 {
+  cursor: pointer;
+  color: red;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 20px; 
+}
+
+.description, .review {
+  margin-top: 10px;
+  color: black; 
+}
+
+.review-placeholder {
+  margin-top: 20px;
+}
+
+.review-placeholder p {
+  margin-bottom: 10px;
+}
 
 @media (max-width: 768px) {
   .main {

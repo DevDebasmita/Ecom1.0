@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../Header';
 import Footer from './Footer';
 import AllProduct from './AllProduct';
@@ -6,6 +6,19 @@ import './fashion.css';
 import NavBar from '../NavBar';
 
 const Fashion = () => {
+  const [showDescription, setShowDescription] = useState(false);
+  const [showReview, setShowReview] = useState(false);
+
+  const handleDescriptionClick = () => {
+    setShowDescription(!showDescription);
+    setShowReview(false); // Hide review when description is clicked
+  };
+
+  const handleReviewClick = () => {
+    setShowReview(!showReview);
+    setShowDescription(false); // Hide description when review is clicked
+  };
+
   return (
     <div>
       <Header />
@@ -23,11 +36,32 @@ const Fashion = () => {
             <img src="./F1.jpeg" alt="Product 4" />
           </div>
           <div className="product-info">
-            <h3>Description &nbsp; &nbsp; Review(0)</h3>
-            <p className="description">
-              A key objective is engaging digital marketing customers and allowing them to interact with the brand through servicing and delivery of digital media. Information is easy to access at a fast rate through the use of digital communications.
-              Users with access to the Internet can use many digital mediums, such as Facebook, YouTube, Forums, and Email etc. Through Digital communications it creates a Multi-communication channel where information can be quickly exchanged around the world by anyone without any regard to whom they are. Social segregation plays no part through social mediums due to lack of face to face communication and information being wide spread instead to a selective audience.
-            </p>
+            <div className="headers">
+              <h3 onClick={handleDescriptionClick} className="clickable">
+                Description
+              </h3>
+              <h3 onClick={handleReviewClick} className="clickable">
+                Review(0)
+              </h3>
+            </div>
+            {showDescription && (
+              <p className="description">
+                A key objective is engaging digital marketing customers and allowing them to interact with the brand through servicing and delivery of digital media. Information is easy to access at a fast rate through the use of digital communications.
+                Users with access to the Internet can use many digital mediums, such as Facebook, YouTube, Forums, and Email etc. Through Digital communications it creates a Multi-communication channel where information can be quickly exchanged around the world by anyone without any regard to whom they are. Social segregation plays no part through social mediums due to lack of face to face communication and information being wide spread instead to a selective audience.
+              </p>
+            )}
+            {showReview && (
+              <div className="review">
+                <p>No reviews yet. Be the first to write a review!</p>
+                <div className="review-placeholder">
+                  <p><strong>John Doe</strong></p>
+                  <p>★★★★☆</p>
+                  <p>
+                    Great product! I have been using it for a week now and it works perfectly. The design is sleek and the features are very user-friendly.
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
         </div>
         <div className="product-details">

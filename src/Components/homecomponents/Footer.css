@@ -44,11 +44,12 @@
 
 .footer-center ul li a, .footer-center1 ul li a {
   color: #fff;
-  text-decoration: none;
+  text-decoration: none !important; 
 }
 
 .footer-center ul li a:hover, .footer-center1 ul li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #fff;
 }
 
 .social-links {

@@ -1,4 +1,4 @@
-/* support.css */
+
 .support-container {
     display: flex;
     flex-direction: column;
@@ -78,8 +78,6 @@
 .submit-button:hover {
     background-color: #0056b3;
 }
-
-/* Responsive Design */
 @media (max-width: 768px) {
     .support-content {
         padding: 15px;
